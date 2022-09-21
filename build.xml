@@ -26,7 +26,7 @@
     </target>
 
     <target name="run" depends="package">
-        <java jar="build/jar/Calculatrice-v1.jar" fork="true" />
+        <java jar="${jardir}/${ant.project.name}.jar" fork="true" />
     </target>
 
     <!-- Generate javadocs for current project into ${doc.dir} -->
